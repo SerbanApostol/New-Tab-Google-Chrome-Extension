@@ -1,0 +1,44 @@
+{
+	"name": "My New Tab",
+
+	"version": "1.0",
+
+	"description": "Replaces the default New Tab with a more customisable one.",
+
+	"permissions": [ "activeTab", "declarativeContent", "storage", "tabs" ],
+
+	"incognito": "split",
+
+	"options_page": "options.html",
+
+	"browser_action": {
+
+		"default_popup": "popup.html",
+
+		"default_title": "Add bookmark to New Tab",
+
+		"default_icon": {
+        		"16": "Icons/icon16.png",
+    		   	"32": "Icons/icon32.png",
+   		     	"48": "Icons/icon48.png",
+   		     	"128": "Icons/icon128.png"
+      		}
+
+	},
+
+	"icons": {
+		"16": "Icons/icon16.png",
+      		"32": "Icons/icon32.png",
+      		"48": "Icons/icon48.png",
+     		"128": "Icons/icon128.png"
+	},
+
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+
+	"content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+
+	"manifest_version": 2
+
+}

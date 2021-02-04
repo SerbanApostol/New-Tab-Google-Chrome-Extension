@@ -1,0 +1,275 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.settings {
+	position: absolute;
+	top: 12px;
+	right: 14px;
+	z-index: 1;
+	border-radius: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+}
+
+.settings:hover {
+	background-color: rgba(55,55,55,0.2);
+}
+
+#sett {
+	border-radius: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center {
+	position: relative;
+	height: 97vh;
+}
+
+.center h1 {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -67%);
+}
+
+.center p {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 90%);
+}
+
+.time {
+	font-size: 20vw;
+	text-shadow: 2px 3px black;
+	font-weight: bold;
+	cursor: context-menu;
+}
+
+.date {
+	font-size: 3.4vw;
+	text-shadow: 1px 2px black;
+	cursor: context-menu;
+}
+
+.trueleft {
+	background-color: rgba(55,55,55,0.2);
+	width: 12vw;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	z-index: -10;
+}
+
+.left {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 12vw;
+	font-size: 16px;
+}
+
+button {
+	border-radius: 15px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.9);
+}
+
+#BUTTON {
+	background-color: rgba(0,0,0,0);
+	display: flex;
+	align-items: center;
+	/*width: 12vw;*/
+	font-size: 16px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	padding: 4px;
+	border-radius: 30px;
+	margin: 0px 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgba(80,80,80,0.3);
+}
+
+#BUTTON:hover {
+	background-color: rgba(80,80,80,0.1);
+}
+
+button img {
+	flex: none;
+}
+
+.bookmark {
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.bookmark:hover {
+	background-color: rgba(80,80,80,0.3);
+}
+
+.bookmark img {
+	flex: none;
+	width: 16px;
+	height: 16px;
+	margin-right: 3px;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+.linkdiv {
+	padding: 0px 3px;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: auto;
+}
+
+.bmoptions {
+	display: none;
+	position: absolute;
+	border: none;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0);
+	z-index: 1;
+	flex: none;
+	align-items: center;
+	top: -11px;
+	left: 119px;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+
+.bmoptions img {
+	flex: none;
+	width: 6px;
+	height: 18px;
+	margin-right: 0px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: lightblue;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+	border-radius: 8px;
+    border: 1px solid #888;
+    font-size: 150%;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#bmurl {
+	width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#save,
+#cancel {
+	margin-right: 5px;
+	text-align: center;
+	font-size: 15px;
+	padding: 8px;
+	background-color: #4688f1;
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+	color: white;
+}
+
+
+
+/* Popup container */
+.popup {
+    position: absolute;
+    cursor: pointer;
+	display: block;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0;
+    position: absolute;
+    z-index: 2;
+	bottom: -112px;
+    left: 118px;
+    margin-left: 20px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+   /* top: 100%;
+    left: 50%; */
+	top: 4px;
+	left: -5px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+}
+

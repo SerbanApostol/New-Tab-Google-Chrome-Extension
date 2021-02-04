@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+      <style>
+	body {
+		background-color: lightblue;
+		padding: 10px;
+		border-radius: 10px;
+		font-size: 90%;
+	}
+
+	h1 {
+		paddind-top: 10px;
+	}
+
+	input {
+		width: 120px;
+		font-size: 15px;
+	/*}
+
+	#close {
+		color: #aaa;
+		float: right;
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+	#close:hover,
+	#close:focus {
+	    color: black;
+	    text-decoration: none;
+	    cursor: pointer;
+	}*/
+
+#save/*,
+#cancel*/ {
+	margin-right: 5px;
+	text-align: center;
+	font-size: 13px;
+	padding: 5px;
+	background-color: #4688f1;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	color: white;
+}
+
+
+      </style>
+
+   </head>
+
+   <body>
+
+        <!--<span id="close">&times;</span>-->
+	<h1 id="h1">New Bookmark</h1>
+        <p>The name of the bookmark:</p>
+	<input type="text" id="bmname"/>
+	<p>The URL (address) of the bookmark:</p>
+	<input type="text" id="bmurl"/><br><br>
+	<button id="save">Save</button>
+	<!--<button id="cancel">Cancel</button>-->
+
+      <script src="popup.js"></script>
+
+   </body>
+
+</html>

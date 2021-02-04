@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>New Tab</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+<!--<img height="64" width="64" src='https://plus.google.com/_/favicon?domain_url=https://www.steamcommunity.com' />
+	v   iconita urmata de textul/numele introdus, bookmarkuri in forma de lista, precum folderele din bara
+	v   pop,push(add v,remove v)bookmarks,move:top,up,(//up x places)(verifica sa nu iasa din vector), //schimba din optiuni cu bm-urile alea blanao cu iconita 64*64 si text dedesupt
+	vezi daca nu ar fi mai eficient sa dai storage.set si .get la array-uri in loc de valori individuale.
+	v   fa preview ca lumea
+	v   modal card-ul sa arate mai bine(printre altele sa aiba colturi rotunjite(done))
+-->
+
+   <a href="options.html" class="settings" title="Settings" target="_blank">
+      <img id="sett" src="Icons/settingsBlack.png" alt="settings" width="32px" height="32px">
+   </a>
+   <div class="center">
+      <h1 id="time" class="time"></h1>
+      <p id="date" class="date"></p>
+   </div>
+   <div id="myModal" class="modal">
+     <!-- Modal content -->
+     <div class="modal-content">
+        <span class="close">&times;</span>
+	<h1 id="h1">New Bookmark</h1>
+        <p>The name of the bookmark:</p>
+	<input type="text" id="bmname"/>
+	<p>The URL (address) of the bookmark:</p>
+	<input type="text" id="bmurl"/><br><br>
+	<button id="save">Save</button>
+	<button id="cancel">Cancel</button>
+     </div>
+   </div>
+
+<!-- ->
+<div class="popup" id="popup">
+  <button><img src="Icons/Menu.png" width="5px" height="15px" /></button>
+  <span class="popuptext" id="myPopup">
+	<button><img src="Icons/Menu.png" width="5px" height="15px" /></button><br>
+	<button>ggfnuenficonpq</button><br>
+	<button><img src="Icons/Menu.png" width="5px" height="15px" />asdf</button><br>
+  </span>
+</div>
+<!- -->
+</body>
+   <script src="main.js">
+   </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</html>

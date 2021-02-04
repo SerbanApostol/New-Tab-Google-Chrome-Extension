@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>Options for New Tab</title>
+      <link rel="stylesheet" type="text/css" media="screen" href="options.css" />
+    </head>
+    <body>
+      <div id="bg">
+	<h1>Customisation Options</h1>
+	<br><br>
+	<div id="BgImBttn" class="slider">&nbsp;&nbsp;Background Customisation</div>
+	<div id="BgImDiv" class="div">
+	   <p>Select a background from our library:</p>
+	   <select id="BgDropDown">
+	      <option value="">Select a background image</option>
+	      <option value="Images/GradientOrangeToRed.png">GradientOrangeToRed.png</option>
+	      <option value="Icons/settingsBlack.png">settingsBlack.png</option>
+	      <option value="Images/GradientBlueToGreen.png">GradientBlueToGreen.png</option>
+	      <option value="Images/GradientBlueToPurple.png">GradientBlueToPurple.png</option>
+	      <option value="Images/GradientBlueToWhite.png">GradientBlueToWhite.png</option>
+	      <option value="Images/GradientLightBlueToWhite.png">GradientLightblueToWhite.png</option>
+	      <option value="Images/ButterflyOnFlower.jpeg">ButterflyOnFlower.jpeg</option>
+	      <option value="Images/DockOnLake.jpeg">DockOnLake.jpeg</option>
+	      <option value="Images/ForestFog.jpeg">ForestFog.jpeg</option>
+	      <option value="Images/ForestRiver.jpeg">ForestRiver.jpeg</option>
+	      <option value="Images/LakeInMountains.jpeg">LakeInMountains.jpeg</option>
+	      <option value="Images/MoonOnTheSea.jpeg">MoonOnTheSea.jpeg</option>
+	      <option value="Images/NightSky.jpeg">NightSky.jpeg</option>
+	      <option value="Images/PathInTheWoods.jpg">PathInTheWoods.jpg</option>
+	      <option value="Images/RailsInTheWoods.jpg">RailsInTheWoods.jpg</option>
+	      <option value="Images/RainyRoad.jpeg">RainyRoad.jpeg</option>
+	      <option value="Images/Sunset.jpeg">Sunset.jpeg</option>
+	      <option value="Images/UserImage.jpeg">UserImage.jpeg</option>
+	      <option value="Images/UserImage.jpg">UserImage.jpg</option>
+	      <option value="Images/UserImage.png">UserImage.png</option>
+	      <option value="Images/UserImage.gif">UserImage.gif</option>
+	   </select>
+	   <br>
+	   <p>or</p>
+	   <p>Input the URL to the new background image:</p>
+           <input type="text" id="newbg">
+	   <br><br>
+	   <img src="" alt="Preview Background" id="preview" class="preview" /><br><br>
+	   <input type="checkbox" id="repeatx">Repeat the background image horizontally to fill the window, if necessary.</input>
+	   <br><br>
+	   <input type="checkbox" id="repeaty">Repeat the background image vertically to fill the window, if necessary.</input>
+	   <br><br>
+	   <input type="checkbox" id="sizex">Fit the background image's width to the width of the window.</input>
+	   <br><br>
+	   <input type="checkbox" id="sizey">Fit the background image's height to the height of the window.</input>
+	   <br><br>
+	   <button id="savebg">Save Changes</button>
+	   <button id="resetbg">Reset to Previous</button>
+	   <button id="defabg">Reset to Default</button>
+	</div>
+	<div id="BgClrBttn" class="slider">&nbsp;&nbsp;Background and Settings Icon Colour Selection</div>
+	<div id="BgClrDiv" class="div">
+	   <p>Select the colour of the background:</p>
+	   <div id="BgClrButtonDiv">
+           </div>
+	   <p>or</p>
+	   <p>Select any colour you want:</p>
+           <input type="color" id="newbgclr" class="clrbar">
+	   <br><p>Select the colour of the settings icon:</p>
+	   <select id="cogclr">
+		<option>Select colour</option>
+		<option value="Black">Black</option>
+		<option value="White">White</option>
+		<option value="Grey">Grey</option>
+		<option value="LightGrey">Light Grey</option>
+		<option value="Blue">Blue</option>
+		<option value="Green">Green</option>
+		<option value="Red">Red</option>
+		<option value="LightBlue">Light Blue</option>
+		<option value="Lime">Lime</option>
+		<option value="NeonGreen">Neon Green</option>
+		<option value="Orange">Orange</option>
+		<option value="Pink">Pink</option>
+		<option value="Purple">Purple</option>
+		<option value="SalmonRed">Salmon Red</option>
+		<option value="Turquoise">Turquoise</option>
+		<option value="Yellow">Yellow</option>
+	   </select>
+	   <br><br>
+	   <img src="" alt="Preview Settings Icon" id="preview2" class="preview" /><br><br>
+	   <button id="saveclr">Save Changes</button>
+	   <button id="resetclr">Reset to Previous</button>
+	   <button id="defaclr">Reset to Default</button>
+	</div>
+	<div id="TxtClrBttn" class="slider">&nbsp;&nbsp;Date and Time Customisation</div>
+	<div id="TxtClrDiv" class="div">
+	   <p>Select the colour of the text of time and date:</p>
+	   <div id="ClrButtonDiv">
+	   </div>
+	   <p>or</p>
+	   <p>Select any colour you want:</p>
+           <input type="color" id="newtxtclr" class="clrbar">
+	   <br><br><br>
+	   <input type="checkbox" id="AP">Display time in 12-hours format</input><br>
+	   <input type="checkbox" id="secs">Display seconds</input><br>
+	   <input type="checkbox" id="date" checked>Display date</input><br>
+	   <p>Select date format:</p>
+	   <select id="dateformat">
+		<option>Select format</option>
+		<option value="1">dd/mm/yyyy</option>
+		<option value="2">yyyy/mm/dd</option>
+		<option value="3">mm/dd/yyyy</option>
+		<option value="4">yyyy/dd/mm</option>
+	   </select>
+	   <br><p>Select whether to display the date in base 10 or otherwise:</p>
+	   <select id="timeBase">
+		<option>Select base</option>
+		<option value="10">decimal (base 10, default)</option>
+		<option value="2">binary (base 2)</option>
+		<option value="16">hexadecimal (base 16)</option>
+	   </select><br>
+	   <button id="savetxt">Save Changes</button>
+	   <button id="resettxt">Reset to Previous</button>
+	   <button id="defatxt">Reset to Default</button>
+	</div>
+	<div id="BmTabBttn" class="slider">&nbsp;&nbsp;Bookmark Tab Customisation</div>
+	<div id="BmTabDiv" class="div"><br>
+		<input type="checkbox" id="bmtab" checked>Display the bookmark tab.</input>
+	   <p>Select the colour of the text:</p>
+	   <div id="BmTxtClrButtonDiv">
+           </div>
+	   <p>or</p>
+	   <p>Select any colour you want:</p>
+           <input type="color" id="newbmtxtclr" class="clrbar">
+	   <br>
+	   <p>Select font size:</p>
+		<select id="fs">
+			<option>Select size</option>
+			<option value="16px" id="small">Small</option>
+			<option value="18px" id="medium">Medium</option>
+			<option value="20px" id="large">Large</option>
+	   	</select><br>
+	   <p>Select the transparency level of the bookmark tab:</p>
+		<select id="alpha">
+			<option>Select alpha</option>
+			<option value="0.0">0%</option>
+			<option value="0.1">10%</option>
+			<option value="0.2">20%</option>
+			<option value="0.3">30%</option>
+			<option value="0.4">40%</option>
+			<option value="0.5">50%</option>
+			<option value="0.6">60%</option>
+			<option value="0.7">70%</option>
+			<option value="0.8">80%</option>
+			<option value="0.9">90%</option>
+			<option value="1">100%</option>
+	        </select><br>
+	   <button id="savebm">Save Changes</button>
+	   <button id="resetbm">Reset to Previous</button>
+	   <button id="defabm">Reset to Default</button>
+	</div>
+	<br><br>
+	<button id="save">Save Changes</button>
+	<button id="defa">Reset to Default</button><br><br>
+	   <!-- In the works:
+		v Select cog color
+		//Music
+		//Frames
+		Available in other languages
+		//Need a second background image?
+		v~ open popup to offer to save bookmark to the new tab
+		v Change opacity of bookmark tab/menu
+	   -->
+	<div class="tipsnormal" id="tips">
+	   <p class="tipstitle">&nbsp;&nbsp;Tips and Instructions</p>
+	    <div id="Tip1Bttn" class="slidert">Tip 1: Set locally stored personal image as background</div>
+	   <div id="Tip1Div" class="divt"><br>You can select your own locally stored image as a background if 
+	   you copy your image in the Images folder in the folder of the extension 
+	   under the name "UserImage.*", where * is the format which can be .jpg, 
+	   .jpeg, .png or .gif. If the image is not in one of these formats and you 
+	   do not want to change its format, you can write in the URL text input "<code>Images/image_name.format</code>" 
+	   after you have copied the image in the folder, 
+	   "image_name" and "format" being placeholders for the actual name and format 
+	   of the image. The path to the folder is:<br />
+	   a) i) For Windows XP: "<code>C:\Documents and Settings\%USERNAME%\Local Settings\Application Data\Google\Chrome\User Data\Default\Extensions\&lt;Extension ID&gt;</code>"; <br />
+	   a) ii) For Windows 10/8/7/Vista: "<code>C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Extensions\&lt;Extension ID&gt;</code>"; <br />
+	   b) For macOS: "<code>~/Library/Application Support/Google/Chrome/Default/Extensions/&lt;Extension ID&gt;</code>";<br />
+	   c) For Linux: "<code>~/.config/google-chrome/Default/Extensions/&lt;Extension ID&gt;</code>";<br />
+	   d) For Chrome OS: "<code>/home/chronos/Extensions/&lt;Extension ID&gt;</code>".<br />
+	   <code>&lt;Extension ID&gt;</code> is the name of the folder given by Chrome. You can find 
+	   it in the Extensions menu, on the lower half of the extension's card, 
+	   named ID. Extensions are found in the menu on the right side of the address bar, 
+	   under the More Tools submenu or to the address <code>chrome://extensions/</code>. 
+	   The ID is also found in this page's address: "chrome-extension://&lt;Extension ID&gt;/options.html".<br />
+	   Source (and a few other paths for other operating systems): 
+	   <a href="https://stackoverflow.com/questions/21475866/where-are-installed-google-chrome-extensions-stored-locally/21482465" target="_blank">stackoverflow.com/questions/...</a></div>
+	    <div id="Tip2Bttn" class="slidert">Tip 2: Set an image from the internet as background</div>
+	   <div id="Tip2Div" class="divt"><br>In the URL text input you can link any image file directly from the internet. 
+	   Please write/paste the entire URL, including https:// and all of that!
+	   For example, you can write/link the following image: 
+	   <a href="https://i.redd.it/5rb0chy1mqe01.png" target="_blank">https://i.redd.it/5rb0chy1mqe01.png</a> 
+	   (Credit: Reddit User: maumau818e, Post: 
+	   <a href="https://www.reddit.com/r/DDLC/comments/7vu9vs/a_sayori_template_that_i_made_from_the_jebaited/" target="_blank">https://www.reddit.com/r/DDLC/comments/...</a>
+	   </div>
+	    <div id="Tip3Bttn" class="slidert">Tip 3: If the "Reset to Previous" button does nothing, click again</div>
+	   <div id="Tip3Div" class="divt"><br>No, really. I do not know why it does that sometimes. Thank you for your understanding!<br>¯\_(ツ)_/¯ :P<br>(It should work the second time, though.)<br></div>
+	    <div id="Tip4Bttn" class="slidert">Tip 4: You might need to refresh the New Tab once to see the changes</div>
+	   <div id="Tip4Div" class="divt"><br>That's all I have to say on this topic, although it might be obvious.</div>
+	    <div id="Tip5Bttn" class="slidert">Tip 5: To preview the image with the address you have written</div>
+	   <div id="Tip5Div" class="divt"><br>Press enter or click away.</div>
+	    <div id="Tip6Bttn" class="slidert">Tip 6: Uses of the extension action icon</div>
+	   <div id="Tip6Div" class="divt"><br>If you click the extension action icon, that is, the icon with the extension's logo, 
+	   which is placed to the right of the address bar, you can bookmark the current page of any given time to the New Tab page. 
+	   Don't bookmark pages like "chrome://extensions" because the extension is not allowed to access pages that are on the 
+	   local PC, but are not in the extension's folder.</div>
+	    <div id="CreditBttn" class="slidert">Credit</div>
+	   <div id="CreditDiv" class="divt"><br>The images that are not gradients or cog.png are from 
+	   the following site which offers free royalty-free stock images: 
+	   <a href="https://www.pexels.com/" target="_blank">www.pexels.com</a>. Thank you 
+	   a lot! (#notspon) I have used images from the <a href="https://www.pexels.com/search/nature/" title="pexels.com" target="_blank">Nature</a> category.<br>
+	   "settingsBlack.png" image and settings icon was made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> which is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.
+	   All the other colour variants are this original image, with only the colour modified by me using GIMP 2, free image editing software (a free alternative to Adobe Photoshop).<br>
+	   This extension was mostly made possible by <a href="https://www.w3schools.com">w3schools.com</a> and their awesome tutorials and extensive information. Also, an important part is due to the answers found on <a href="https://www.stackoverflow.com">stackoveflow.com</a>. Thank you, Internet, for all these free sources of knowledge and learning platforms!</div><br><br>
+	</div>
+      </div>
+	<div class="fixed">Photos credit: <a href="https://www.pexels.com/" target="_blank">www.pexels.com</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+	</div>
+    </body>
+    <script src="options.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="optionsSlide.js"></script>
+  </html>
